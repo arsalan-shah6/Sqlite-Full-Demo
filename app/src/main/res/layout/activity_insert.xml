@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Insert Student Record"
+        android:textSize="30sp"
+        android:id="@+id/crud"
+        android:layout_marginTop="30dp"
+        android:textColor="#3791f2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/crud"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Name"
+            android:background="@drawable/textview_top"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Course"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/course"
+           android:background="@drawable/textview_middle"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Contact"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:id="@+id/contact"
+           android:background="@drawable/textview_middle"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Total Fee"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/total_fee"
+            android:background="@drawable/textview_middle"/>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Fee Paid"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/fee_paid"
+            android:inputType="number"
+           android:background="@drawable/textview_below"/>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:id="@+id/save"
+            android:text="Save"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/linear"
+        android:layout_marginTop="30dp"
+        android:text="Search By Name"
+        android:textColor="@color/purple_500"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="47dp"
+            android:id="@+id/search_bar"
+            android:hint="Search"
+            android:paddingLeft="10dp"
+            android:background="@drawable/search"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/search_btn"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Name"
+            android:background="@drawable/textview_top"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/name"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Course"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/course"
+            android:background="@drawable/textview_middle"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Contact"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:id="@+id/contact"
+            android:background="@drawable/textview_middle"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Total Fee"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/total_fee"
+            android:background="@drawable/textview_middle"/>
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:hint="Fee Paid"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/fee_paid"
+            android:inputType="number"
+            android:background="@drawable/textview_below"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
