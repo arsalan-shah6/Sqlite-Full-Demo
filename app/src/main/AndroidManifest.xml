@@ -14,7 +14,13 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".RetrieveDataActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".InsertActivity" />
+        <activity android:name=".InsertActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -76,6 +76,14 @@
 
             android:layout_gravity="center"
             android:layout_marginTop="50dp"/>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:id="@+id/retrieve"
+            android:text="show all"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
 
 
     </LinearLayout>

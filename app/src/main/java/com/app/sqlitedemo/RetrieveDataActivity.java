@@ -63,7 +63,7 @@ public class RetrieveDataActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity( new Intent(RetrieveDataActivity.this,HomeActivity.class) );
+        startActivity( new Intent(RetrieveDataActivity.this,InsertActivity.class) );
         super.onBackPressed();
     }
 }

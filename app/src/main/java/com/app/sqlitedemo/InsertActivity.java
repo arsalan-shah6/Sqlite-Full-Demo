@@ -17,7 +17,7 @@ import com.app.sqlitedemo.Model.Model;
 
 public class InsertActivity extends AppCompatActivity {
  EditText names,courses,contacts,total_fees,fee_paids;
- Button save;
+ Button save,showAll;
  DBHelper dbHelper;
  ProgressDialog progressDialog;
     @Override
@@ -33,6 +33,13 @@ public class InsertActivity extends AppCompatActivity {
         dbHelper=new DBHelper( this );
         progressDialog=new ProgressDialog( this );
         progressDialog.setMessage( "Please Wait" );
+        showAll=findViewById( R.id.retrieve );
+        showAll.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity( new Intent(InsertActivity.this,RetrieveDataActivity.class) );
+            }
+        } );
         save.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,5 +87,11 @@ public class InsertActivity extends AppCompatActivity {
             fee_paids.setText( "" );
             total_fees.setText( "" );
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+        super.onBackPressed();
     }
 }
